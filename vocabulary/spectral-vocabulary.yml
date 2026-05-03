@@ -1,0 +1,141 @@
+vocabulary:
+  name: Spectral Vocabulary
+  description: >-
+    Domain vocabulary for Spectral, the open-source API style guide enforcer
+    and linter from Stoplight, covering linting concepts, ruleset definitions,
+    and API design governance.
+  created: '2026-05-02'
+  modified: '2026-05-02'
+
+  terms:
+    - term: Ruleset
+      definition: >-
+        A YAML or JSON configuration file that defines a set of Spectral rules
+        to be applied when linting an API specification. Rulesets can extend
+        built-in or published rulesets.
+      related:
+        - Rule
+        - Extends
+        - Overrides
+
+    - term: Rule
+      definition: >-
+        An individual linting check within a Spectral ruleset that defines
+        a condition to test, a severity level, and a message to display when
+        the condition is violated.
+      related:
+        - Ruleset
+        - Severity
+        - Given
+        - Then
+
+    - term: Given
+      definition: >-
+        A JSONPath expression in a Spectral rule that selects the parts of
+        the document to apply the rule's assertion to.
+      related:
+        - Rule
+        - JSONPath
+
+    - term: Then
+      definition: >-
+        The assertion section of a Spectral rule, specifying which function
+        to apply to the selected nodes and what parameters to pass.
+      related:
+        - Rule
+        - Function
+
+    - term: Severity
+      definition: >-
+        The importance level of a Spectral rule violation: error (0), warn (1),
+        info (2), or hint (3). Errors cause a non-zero exit code in CI/CD.
+      related:
+        - Rule
+        - Linting
+
+    - term: Function
+      definition: >-
+        A built-in or custom JavaScript/TypeScript function used in a Spectral
+        rule's Then clause to perform an assertion on a node value. Built-in
+        functions include truthy, falsy, defined, undefined, pattern, enumeration,
+        length, schema, and alphabetical.
+      related:
+        - Rule
+        - Then
+
+    - term: Extends
+      definition: >-
+        A Spectral ruleset field that imports rules from another ruleset by URL
+        or npm package name, enabling rule inheritance and composition.
+      related:
+        - Ruleset
+        - Overrides
+
+    - term: Overrides
+      definition: >-
+        A Spectral ruleset field that changes rule severity or disables rules
+        inherited from extended rulesets.
+      related:
+        - Ruleset
+        - Extends
+
+    - term: JSONPath
+      definition: >-
+        A query language for JSON documents, used in Spectral's Given field
+        to select nodes to lint. Spectral uses the JSONPath++ dialect.
+      related:
+        - Given
+        - Rule
+
+    - term: Built-in Ruleset
+      definition: >-
+        Pre-defined Spectral rulesets for specific formats: spectral:oas for
+        OpenAPI, spectral:asyncapi for AsyncAPI, and spectral:arazzo for Arazzo.
+      related:
+        - Ruleset
+        - Extends
+
+    - term: Alias
+      definition: >-
+        A named JSONPath expression defined in a ruleset that can be reused
+        across multiple rules to avoid repetition.
+      related:
+        - Ruleset
+        - JSONPath
+
+    - term: Format
+      definition: >-
+        A Spectral concept identifying the type of document being linted
+        (OpenAPI 2.0, OpenAPI 3.0, AsyncAPI 2.x, etc.) used to apply
+        format-specific rules conditionally.
+      related:
+        - Ruleset
+        - Built-in Ruleset
+
+    - term: Linting
+      definition: >-
+        The process of analyzing a JSON/YAML document against a set of Spectral
+        rules to find style guide violations, quality issues, or security concerns.
+      related:
+        - Ruleset
+        - Rule
+        - Severity
+
+    - term: Style Guide
+      definition: >-
+        A set of conventions and best practices for API design, encoded as
+        Spectral rules to enforce consistency across API specifications.
+      related:
+        - Ruleset
+        - Linting
+
+  tags:
+    - API Design
+    - API Linting
+    - API Style Guide
+    - AsyncAPI
+    - JSON Schema
+    - JSONPath
+    - OpenAPI
+    - Quality Assurance
+    - TypeScript

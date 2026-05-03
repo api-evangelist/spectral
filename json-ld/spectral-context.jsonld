@@ -1,0 +1,64 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "schema": "https://schema.org/",
+    "spectral": "https://stoplight.io/spectral/vocab/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+
+    "Ruleset": {
+      "@id": "spectral:Ruleset",
+      "@type": "@id",
+      "schema:description": "A Spectral configuration defining linting rules for API specifications."
+    },
+    "Rule": {
+      "@id": "spectral:Rule",
+      "@type": "@id",
+      "schema:description": "An individual linting check within a Spectral ruleset."
+    },
+    "LintingResult": {
+      "@id": "spectral:LintingResult",
+      "@type": "@id",
+      "schema:description": "The output of running Spectral against a document."
+    },
+    "Violation": {
+      "@id": "spectral:Violation",
+      "@type": "@id",
+      "schema:description": "A rule violation found during linting."
+    },
+
+    "given": {
+      "@id": "spectral:given",
+      "@type": "xsd:string"
+    },
+    "severity": {
+      "@id": "spectral:severity",
+      "@type": "@vocab"
+    },
+    "message": {
+      "@id": "spectral:message",
+      "@type": "xsd:string"
+    },
+    "functionName": {
+      "@id": "spectral:functionName",
+      "@type": "xsd:string"
+    },
+    "format": {
+      "@id": "spectral:format",
+      "@type": "@vocab"
+    },
+    "recommended": {
+      "@id": "spectral:recommended",
+      "@type": "xsd:boolean"
+    },
+
+    "name": "schema:name",
+    "description": "schema:description",
+    "url": "schema:url",
+    "version": "schema:version",
+    "dateCreated": "schema:dateCreated",
+    "dateModified": "schema:dateModified",
+    "SoftwareApplication": "schema:SoftwareApplication",
+    "SoftwareSourceCode": "schema:SoftwareSourceCode",
+    "programmingLanguage": "schema:programmingLanguage"
+  }
+}

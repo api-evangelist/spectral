@@ -1,0 +1,86 @@
+{
+  "title": "Spectral Ruleset Structure",
+  "description": "Hierarchical structure of a Spectral ruleset configuration.",
+  "type": "object",
+  "fields": [
+    {
+      "name": "extends",
+      "type": "string | string[]",
+      "required": false,
+      "description": "Parent ruleset(s) to inherit rules from (npm package names or URLs)."
+    },
+    {
+      "name": "rules",
+      "type": "object",
+      "required": false,
+      "description": "Map of rule name to rule definition.",
+      "children": [
+        {
+          "name": "{rule-name}",
+          "type": "object",
+          "fields": [
+            { "name": "description", "type": "string", "required": false },
+            { "name": "message", "type": "string", "required": false },
+            {
+              "name": "severity",
+              "type": "enum",
+              "values": ["error", "warn", "info", "hint", "off", 0, 1, 2, 3],
+              "required": false
+            },
+            {
+              "name": "given",
+              "type": "string | string[]",
+              "required": true,
+              "description": "JSONPath expression(s) selecting document nodes to test."
+            },
+            {
+              "name": "then",
+              "type": "object | object[]",
+              "required": true,
+              "fields": [
+                { "name": "field", "type": "string", "required": false },
+                { "name": "function", "type": "string", "required": true },
+                { "name": "functionOptions", "type": "object", "required": false }
+              ]
+            },
+            {
+              "name": "formats",
+              "type": "string[]",
+              "required": false,
+              "description": "Limit rule to specific document formats."
+            },
+            {
+              "name": "recommended",
+              "type": "boolean",
+              "required": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "aliases",
+      "type": "object",
+      "required": false,
+      "description": "Named JSONPath expressions for reuse across rules."
+    },
+    {
+      "name": "overrides",
+      "type": "array",
+      "required": false,
+      "description": "Per-file rule severity overrides.",
+      "items": {
+        "fields": [
+          { "name": "files", "type": "string[]", "required": true },
+          { "name": "rules", "type": "object", "required": true }
+        ]
+      }
+    },
+    {
+      "name": "formats",
+      "type": "string[]",
+      "required": false,
+      "description": "Restrict the entire ruleset to specific document formats."
+    }
+  ]
+}

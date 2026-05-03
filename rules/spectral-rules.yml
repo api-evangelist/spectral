@@ -1,0 +1,38 @@
+extends: "spectral:oas"
+
+rules:
+  spectral-ruleset-has-extends:
+    description: Spectral rulesets should extend a base ruleset or define rules explicitly.
+    message: "Ruleset at {{path}} should extend a base ruleset (e.g., spectral:oas)."
+    severity: hint
+    given: "$"
+    then:
+      field: extends
+      function: truthy
+
+  spectral-rule-has-description:
+    description: Every Spectral rule should include a description for documentation clarity.
+    message: "Rule {{path}} is missing a description."
+    severity: warn
+    given: "$.rules[*]"
+    then:
+      field: description
+      function: truthy
+
+  spectral-rule-has-message:
+    description: Every Spectral rule should include a message template for helpful output.
+    message: "Rule {{path}} is missing a message template."
+    severity: warn
+    given: "$.rules[*]"
+    then:
+      field: message
+      function: truthy
+
+  spectral-rule-has-severity:
+    description: Every Spectral rule should explicitly declare its severity level.
+    message: "Rule {{path}} should declare an explicit severity."
+    severity: hint
+    given: "$.rules[*]"
+    then:
+      field: severity
+      function: defined

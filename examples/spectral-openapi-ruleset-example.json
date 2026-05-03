@@ -1,0 +1,39 @@
+{
+  "example": "OpenAPI Spectral Ruleset",
+  "description": "A sample Spectral ruleset extending the built-in OpenAPI ruleset and adding custom rules for tag and operation consistency.",
+  "ruleset": {
+    "extends": ["spectral:oas"],
+    "rules": {
+      "operation-summary-required": {
+        "description": "All operations must have a summary.",
+        "message": "Operation {{path}} is missing a summary field.",
+        "severity": "error",
+        "given": "$.paths[*][get,post,put,patch,delete,options,head]",
+        "then": {
+          "field": "summary",
+          "function": "truthy"
+        }
+      },
+      "operation-tags-required": {
+        "description": "All operations must have at least one tag.",
+        "message": "Operation {{path}} must have at least one tag.",
+        "severity": "warn",
+        "given": "$.paths[*][get,post,put,patch,delete]",
+        "then": {
+          "field": "tags",
+          "function": "truthy"
+        }
+      },
+      "info-contact-required": {
+        "description": "The info object must contain a contact.",
+        "message": "API spec is missing contact information in the info object.",
+        "severity": "warn",
+        "given": "$.info",
+        "then": {
+          "field": "contact",
+          "function": "truthy"
+        }
+      }
+    }
+  }
+}
