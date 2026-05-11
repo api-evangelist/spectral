@@ -82,6 +82,14 @@ common:
     url: https://github.com/stoplightio/spectral/releases
   - type: Contributing
     url: https://github.com/stoplightio/spectral/blob/main/CONTRIBUTING.md
+  - type: Integrations
+    url: https://stoplight.io/integrations
+integrations:
+  - name: Azure
+  - name: GitHub
+  - name: GitLab
+  - name: Bitbucket
+  - name: Single sign-on
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
