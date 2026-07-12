@@ -65,6 +65,8 @@ apis:
         url: >-
           https://raw.githubusercontent.com/api-evangelist/spectral/refs/heads/main/vocabulary/spectral-vocabulary.yml
 common:
+  - type: DomainSecurity
+    url: security/spectral-domain-security.yml
   - type: LinkedIn
     url: https://www.linkedin.com/company/spectralcode
   - type: Website
@@ -86,6 +88,8 @@ common:
     url: https://github.com/stoplightio/spectral/blob/main/CONTRIBUTING.md
   - type: Integrations
     url: https://stoplight.io/integrations
+  - url: https://blog.stoplight.io/feed
+    type: Blog
 integrations:
   - name: Azure
   - name: GitHub
