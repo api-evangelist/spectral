@@ -26,6 +26,14 @@ tags:
   - API Linting
   - API Style Guide
   - AsyncAPI
+  - JSON-Schema
+  - OpenAPI
+  - Quality Assurance
+tags_raw:
+  - API Design
+  - API Linting
+  - API Style Guide
+  - AsyncAPI
   - JSON Schema
   - OpenAPI
   - Quality Assurance
@@ -46,6 +54,14 @@ apis:
     humanURL: https://stoplight.io/open-source/spectral
     baseURL: https://github.com/stoplightio/spectral
     tags:
+      - API Design
+      - API Linting
+      - API Style Guide
+      - AsyncAPI
+      - JSON-Schema
+      - OpenAPI
+      - Quality Assurance
+    tags_raw:
       - API Design
       - API Linting
       - API Style Guide
