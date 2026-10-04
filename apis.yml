@@ -9,15 +9,20 @@ description: >-
   Platform for real-time style guide feedback.
 type: Index
 deliveryModel:
-  model: unknown
-  open_source: false
+  model: self-hosted
+  license: Apache-2.0
+  license_evidence:
+    repo: stoplightio/spectral
+    spdx: Apache-2.0
+    stars: 3216
+  open_source: true
   commercial: false
   callable_host: false
-  label: Delivery model not determined — needs a product licence on record
-  confidence: low
+  label: Self-hosted open source · you run it yourself
+  confidence: medium
   source:
-  - none
-  generated: '2026-08-28'
+  - repository-license
+  generated: '2026-09-25'
   method: derived
 accessModel:
   pricing: freemium
@@ -37,7 +42,7 @@ tags:
   - API Linting
   - API Style Guide
   - AsyncAPI
-  - JSON-Schema
+  - JSON Schema
   - OpenAPI
   - Quality Assurance
 tags_raw:
@@ -48,6 +53,7 @@ tags_raw:
   - JSON Schema
   - OpenAPI
   - Quality Assurance
+  - JSON-Schema
 url: >-
   https://raw.githubusercontent.com/api-evangelist/spectral/refs/heads/main/apis.yml
 created: '2026-03-25'
@@ -69,7 +75,7 @@ apis:
       - API Linting
       - API Style Guide
       - AsyncAPI
-      - JSON-Schema
+      - JSON Schema
       - OpenAPI
       - Quality Assurance
     tags_raw:
@@ -80,6 +86,7 @@ apis:
       - JSON Schema
       - OpenAPI
       - Quality Assurance
+      - JSON-Schema
     properties:
       - type: Documentation
         url: https://docs.stoplight.io/docs/spectral
