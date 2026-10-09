@@ -7,14 +7,18 @@ front_door_ai:
   probed_at: '2026-09-17'
   host: stoplight.io
   final_host: stoplight.io
-  ownership: unresolved
-  owner: null
+  ownership: shared
+  owner: stoplight
   shares_host_with:
   - elements
   - prism
+  - stoplight
   inherited_from: null
+  alias_of: null
   verdict: silent
   score: null
+  band: null
+  band_label: null
   host_score: 0
   density: null
   words: 431
