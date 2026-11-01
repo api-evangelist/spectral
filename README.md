@@ -64,84 +64,141 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Spectral is an open-source API style guide enforcer and linter from Stoplight, providing a flexible JSON/YAML linting engine with built-in support for OpenAPI (v3.1, v3.0, v2.0), Arazzo v1.0, and AsyncAPI v2.x. Teams use Spectral to define, share, and enforce API design standards through custom rulesets, integrating into CI/CD pipelines, VS Code, and the Stoplight Platform.
+Spectral is an open-source API style guide enforcer and linter from Stoplight, providing a flexible JSON/YAML linting engine with built-in support for OpenAPI (v3.1, v3.0, v2.0), Arazzo v1.0, and AsyncAPI v2.x. Teams use Spectral to define, share, and enforce API design standards through custom rulesets, integrating into CI/CD pipelines, VS Code, and the Stoplight Platform for real-time style guide feedback.
 
-**URL:** [https://stoplight.io/open-source/spectral](https://stoplight.io/open-source/spectral)
+**Areas:** API Design · API Linting · API Style Guide · AsyncAPI · JSON Schema · OpenAPI · Quality Assurance
 
-**GitHub:** [https://github.com/stoplightio/spectral](https://github.com/stoplightio/spectral)
+## Spectral on APIs.io
 
-**Latest Version:** v6.15.0 | **License:** Apache-2.0 | **Stars:** 3,088
+Everything profiled for Spectral is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/spectral/](https://apis.io/providers/spectral/)** — or go straight to one of the APIs or properties below.
 
-## Key Features
+### APIs (1)
 
-- Generic ruleset engine for JSON/YAML documents
-- Built-in rulesets: `spectral:oas`, `spectral:asyncapi`, `spectral:arazzo`
-- Custom rule authoring with JSONPath selectors and built-in functions
-- CLI, Node.js API, and VS Code extension
-- CI/CD integration via CLI binary or npm package
-- Rule inheritance and composition via `extends`
-- Per-file severity overrides via `overrides`
+- [Spectral](https://apis.io/apis/spectral/spectral/) — Spectral is a flexible JSON/YAML linter and style guide enforcer with built-in support for OpenAPI (v3.1, v3.0, v2.0), Arazzo v1.0, and AsyncAPI v2.x. It…
 
-## Supported Formats
+### Published properties
 
-OpenAPI v2.0 (Swagger), OpenAPI v3.0, OpenAPI v3.1, AsyncAPI v2.x, Arazzo v1.0, generic JSON/YAML
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## Scope
+#### JSON Schema (1)
 
-- **Type:** Index
-- **Access:** 3rd-Party
+The data models the API reads and writes.
 
-## Tags
+- [Spectral Ruleset](https://apis.io/schemas/spectral/spectral-ruleset/)
 
-API Design, API Linting, API Style Guide, AsyncAPI, JSON Schema, OpenAPI, Quality Assurance
+#### JSON Structure (1)
 
-## Timestamps
+Data models expressed in JSON Structure.
 
-- **Created:** 2026-03-25
-- **Modified:** 2026-05-02
+- [Spectral Ruleset Structure](https://apis.io/json-structure/spectral/spectral-ruleset-structure/)
 
-## APIs
+#### JSON-LD (1)
 
-### Spectral
+Linked-data contexts for the provider's vocabulary.
 
-Open-source API linter and style guide enforcer with extensible rulesets.
+- [Spectral Context](https://apis.io/jsonld/spectral/spectral-context/)
 
-**Human URL:** [https://stoplight.io/open-source/spectral](https://stoplight.io/open-source/spectral)
+#### Vocabulary (1)
 
-#### Properties
+The provider's domain terms, defined.
 
-| Type | URL |
-|------|-----|
-| Documentation | [https://docs.stoplight.io/docs/spectral](https://docs.stoplight.io/docs/spectral) |
-| Getting Started | [https://docs.stoplight.io/docs/spectral/674b27b261c3c-overview](https://docs.stoplight.io/docs/spectral/674b27b261c3c-overview) |
-| GitHub | [https://github.com/stoplightio/spectral](https://github.com/stoplightio/spectral) |
-| NPM Package | [https://www.npmjs.com/package/@stoplight/spectral-cli](https://www.npmjs.com/package/@stoplight/spectral-cli) |
-| Changelog | [https://github.com/stoplightio/spectral/blob/main/CHANGELOG.md](https://github.com/stoplightio/spectral/blob/main/CHANGELOG.md) |
+- [Spectral Vocabulary](https://apis.io/vocabularies/spectral/spectral-vocabulary/)
 
-## Common Resources
+#### Examples (1)
 
-| Type | URL |
-|------|-----|
-| Website | [https://stoplight.io/open-source/spectral](https://stoplight.io/open-source/spectral) |
-| Documentation | [https://docs.stoplight.io/docs/spectral](https://docs.stoplight.io/docs/spectral) |
-| GitHub Organization | [https://github.com/stoplightio](https://github.com/stoplightio) |
-| NPM Package | [https://www.npmjs.com/package/@stoplight/spectral-cli](https://www.npmjs.com/package/@stoplight/spectral-cli) |
-| License (Apache-2.0) | [https://github.com/stoplightio/spectral/blob/main/LICENSE](https://github.com/stoplightio/spectral/blob/main/LICENSE) |
-| Releases | [https://github.com/stoplightio/spectral/releases](https://github.com/stoplightio/spectral/releases) |
-| Contributing | [https://github.com/stoplightio/spectral/blob/main/CONTRIBUTING.md](https://github.com/stoplightio/spectral/blob/main/CONTRIBUTING.md) |
+Example requests and responses.
 
-## Artifacts
+- [Spectral Openapi Ruleset Example](https://apis.io/examples/spectral/spectral-openapi-ruleset-example/)
 
-| Type | File |
-|------|------|
-| JSON Schema | [json-schema/spectral-ruleset-schema.json](json-schema/spectral-ruleset-schema.json) |
-| JSON Structure | [json-structure/spectral-ruleset-structure.json](json-structure/spectral-ruleset-structure.json) |
-| JSON-LD Context | [json-ld/spectral-context.jsonld](json-ld/spectral-context.jsonld) |
-| Vocabulary | [vocabulary/spectral-vocabulary.yml](vocabulary/spectral-vocabulary.yml) |
-| Example Ruleset | [examples/spectral-openapi-ruleset-example.json](examples/spectral-openapi-ruleset-example.json) |
-| Spectral Rules | [rules/spectral-rules.yml](rules/spectral-rules.yml) |
+#### Governance rules (2)
 
-## Maintainers
+Spectral rulesets for the provider's contracts.
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+- [Spectral — jsonschema rules](https://apis.io/rules/spectral/spectral-jsonschema-spectral-rules/)
+- [Spectral API Rules](https://apis.io/rules/spectral/spectral-rules/)
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Spectral Domain Security](https://apis.io/security/spectral/spectral-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Spectral Plans Pricing](https://apis.io/plans/spectral/spectral-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Spectral Rate Limits](https://apis.io/rate-limits/spectral/spectral-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Spectral Finops](https://apis.io/finops/spectral/spectral-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://stoplight.io/open-source/spectral)
+- [Documentation](https://docs.stoplight.io/docs/spectral)
+- [Blog](https://blog.stoplight.io/feed)
+- [GitHub](https://github.com/stoplightio)
+
+## API Evangelist rating
+
+**Kin Score 20.5** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 66.1 |
+| Contract quality | 21.9 |
+| Contract governance | 27.3 |
+| Operational transparency | 10.5 |
+| Developer ergonomics | 14.3 |
+| Access clarity | 7.9 |
+
+**Agent readiness 0.6** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 10.8** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/spectral/](https://apis.io/providers/spectral/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Spectral: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/spectral/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
